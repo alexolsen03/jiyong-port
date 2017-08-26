@@ -1,0 +1,50 @@
+.offerings {
+  position: relative;
+  z-index: 2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #efefef;
+  color: #586368;
+
+  .darker {
+    color: #34434B;
+  }
+
+  .service-icon {
+    i {
+      color: #34434B;
+    }
+  }
+
+  h2 {
+    color: #34434B;
+    font-size: 1.5em;
+    font-family: RalewayBold;
+  }
+
+  p {
+    font-size: 1.2em;
+    font-family: RalewayLight;
+  }
+
+  .teaching-status {
+    font-size: 0.8em;
+    i {
+      color: green;
+    }
+  }
+}
+
+.flash {
+   animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: green;}
+    to {color: lighten(green, 8%);}
+}

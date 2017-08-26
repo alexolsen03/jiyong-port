@@ -1,0 +1,88 @@
+@font-face {
+  font-family: RalewayBold;
+  src: url("./../fonts/raleway/Raleway-Bold.ttf");
+}
+
+@font-face {
+  font-family: RalewayBoldItalic;
+  src: url("./../fonts/raleway/Raleway-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: RalewayLight;
+  src: url("./../fonts/raleway/Raleway-Light.ttf");
+}
+
+@font-face {
+  font-family: RalewayThin;
+  src: url("./../fonts/raleway/Raleway-Thin.ttf");
+}
+
+@font-face {
+  font-family: RalewayThinItalic;
+  src: url("./../fonts/raleway/Raleway-ThinItalic.ttf");
+}
+
+.main-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #1F494D;
+  border-top: 6px solid #7F3632;
+  z-index: 1;
+
+  .face-shot {
+    background-image: url("./../images/jiyonglookleft.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+  }
+}
+
+.main {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 50px;
+
+  .main-header {
+    margin-top: 100px;
+    font-family: RalewayBold;
+    font-size: 3.5em;
+    max-width: 40%;
+  }
+
+  .main-secondary-header {
+    font-family: RalewayBold;
+    font-size: 1.5em;
+  }
+
+  .main-p-text {
+    margin-top: 50px;
+    font-family: RalewayThin;
+    font-size: 1.5em;
+
+    .thin-italic {
+      font-family: RalewayThinItalic;
+    }
+  }
+
+  button {
+    background-color: #7F3632;
+    border-color: #641E1A;
+    font-size: 1.5em;
+    padding: 10px 30px;
+  }
+
+  .light-text {
+    font-family: RalewayLight;
+  }
+
+  .bold-italic-text {
+    font-family: RalewayBoldItalic;
+  }
+}
