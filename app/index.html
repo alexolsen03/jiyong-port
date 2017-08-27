@@ -43,7 +43,7 @@
       </div>
       <br />
       <br />
-      <button class="btn btn-primary">Contact</button>
+      <button id="contactBtn" onClick="onContact()" class="btn btn-primary">Contact</button>
     </div>
 
     <div class="offerings">
@@ -120,35 +120,36 @@
     </div>
 
     <div class="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col col-lg-8 form-side">
-            <h2>Get In Touch</h2>
+      <div class="form-container">
+        <h2>Contact</h2>
+
+        <div class="city">
+          <i class="fa fa-map-marker"></i>Omaha, NE
+        </div>
+
+        <ul>
+          <li><i class="fa fa-phone"></i> 402-830-5353</li>
+          <li><i class="fa fa-envelope"></i> jennajlee86@gmail.com</li>
+        </ul>
+
+      </div>
+      <div class="contact-main-bg">
+        <div class="korea-photo"></div>
+        <div class="img-form-container">
             <form>
+              <h2>Send a Message</h2>
               <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" >
+                <input type="text" class="form-control" id="name" placeholder="Name">
               </div>
               <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" >
+                <input type="email" class="form-control" id="email" placeholder="Email" aria-describedby="emailHelp" >
               </div>
               <div class="form-group">
-                <label for="interest">Interest</label>
-                <select class="form-control" id="interest">
-                  <option>Translating</option>
-                  <option>Interpreting</option>
-                  <option>Language Classes</option>
-                  <option>Other</option>
-                </select>
+                <textarea class="form-control" id="description" rows="6" placeholder="Message"></textarea>
               </div>
-              <div class="form-group">
-                <label for="description">Message</label>
-                <textarea class="form-control" id="description" rows="6"></textarea>
-              </div>
-              <button class="btn btn-secondary"><i class="fa fa-paper-plane-o"></i> Send</button>
+              <button class="btn btn-primary">Send</button>
             </form>
-          </div>
+
         </div>
       </div>
     </div>
