@@ -66,7 +66,7 @@
     padding-left: 50px;
     width: 34%;
     min-height: 470px;
-    font-family: RalewayLight;
+    font-family: $font-body-light;
     font-size: 1.2em;
 
     .city {
@@ -89,12 +89,12 @@
   }
 
   h2 {
-    font-family: RalewayBold;
+    font-family: $font-header-bold;
     font-size: 2em;
   }
 
   label {
-    font-family: RalewayThin;
+    font-family: $font-body-thin;
   }
 
 }

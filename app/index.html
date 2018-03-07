@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>jiyongport</title>
+    <title>Nebraska's Korean Translator</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
@@ -27,6 +27,12 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <!-- below divs used in js for determining size -->
+    <div class="device-xs visible-xs"></div>
+    <div class="device-sm visible-sm"></div>
+    <div class="device-md visible-md"></div>
+    <div class="device-lg visible-lg"></div>
+
     <div class="main-bg">
       <div class="face-shot"></div>
     </div>
@@ -39,7 +45,7 @@
         Nebraska's <span class="bold-italic-text">Expert</span> in Korean Services
       </div>
       <div class="main-p-text">
-        Offering a variety of services related to all things <span class="thin-italic">Korean</span>.
+        Offering <span class="thin-italic">Korean</span> services to Omaha and the surrounding Nebraska area.
       </div>
       <br />
       <br />
@@ -52,12 +58,12 @@
 
           <div class="col col-sm-4">
             <div class="row">
-              <div class="col-sm-4 col-lg-3">
+              <div class="col-sm-4 col-lg-2">
                 <div class="service-icon">
                   <i class="fa fa-3x fa-file-text-o"></i>
                 </div>
               </div>
-              <div class="col-sm-8 col-lg-9">
+              <div class="col-sm-8 col-lg-10">
                 <h2>Translating</h2>
                 <p>
                   Translate your documents to ensure they reach a wider audience.  Your documents will be translated in an accurate, timely manner.
@@ -68,12 +74,12 @@
 
           <div class="col col-sm-4">
             <div class="row">
-              <div class="col-sm-4 col-lg-3">
+              <div class="col-sm-4 col-lg-2">
                 <div class="service-icon">
                   <i class="fa fa-3x fa-assistive-listening-systems"></i>
                 </div>
               </div>
-              <div class="col-sm-8 col-lg-9">
+              <div class="col-sm-8 col-lg-10">
                 <h2>Interpreting</h2>
                 <p>
                   Having a live interpreter can show your clients that you are serious about your meetings with them.
@@ -84,12 +90,12 @@
 
           <div class="col col-sm-4">
             <div class="row">
-              <div class="col-sm-4 col-lg-3">
+              <div class="col-sm-4 col-lg-2">
                 <div class="service-icon">
                   <i class="fa fa-3x fa-pencil"></i>
                 </div>
               </div>
-              <div class="col-sm-8 col-lg-9">
+              <div class="col-sm-8 col-lg-10">
                 <h2>Teaching</h2>
                 <p>
                   Interest in Korean culture is growing around the world.  One-on-one tutoring and classes for all levels are available.
@@ -108,7 +114,9 @@
     <div class="clients">
       <div class="container">
         <div class="row">
-          <h2>Join These Clients</h2>
+          <div class="col col-lg-12">
+            <h2>Join These Clients</h2>
+          </div>
           <div class="col col-lg-6 text-center">
             <img src="./images/archdiocese.png" />
           </div>
@@ -133,10 +141,10 @@
         </ul>
 
       </div>
-      <div class="contact-main-bg">
+      <div class="contact-main-bg hidden-xs">
         <div class="korea-photo"></div>
         <div class="img-form-container">
-            <form>
+<!--             <form>
               <h2>Send a Message</h2>
               <div class="form-group">
                 <input type="text" class="form-control" id="name" placeholder="Name">
@@ -148,7 +156,7 @@
                 <textarea class="form-control" id="description" rows="6" placeholder="Message"></textarea>
               </div>
               <button class="btn btn-primary">Send</button>
-            </form>
+            </form> -->
 
         </div>
       </div>
@@ -156,12 +164,14 @@
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-105330697-1', 'auto');
+      ga('send', 'pageview');
+
     </script>
 
     <!-- build:js scripts/vendor.js -->
