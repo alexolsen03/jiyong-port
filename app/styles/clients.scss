@@ -1,14 +1,18 @@
 .clients {
   padding-top: 20px;
   padding-bottom: 50px;
-  color: #586368;
+  color: $color-font-lt;
   background-color: white;
 
   h2 {
-    font-family: RalewayThin;
+    font-family: $font-body-light;
     font-size: 2em;
     padding-top: 10px;
     padding-bottom: 20px;
+  }
+
+  img {
+    height: 100px;
   }
 
 }

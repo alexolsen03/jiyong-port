@@ -1,0 +1,14 @@
+.btn-primary {
+  background-color: $color-primary;
+  border-color: $color-primary-dk;
+
+  &:hover {
+    background-color: $color-primary-dk;
+    border-color: $color-primary-dk;
+  }
+
+  &:active {
+    background-color: $color-primary-dk;
+    border-color: $color-primary-dk;
+  }
+}

@@ -1,19 +1,101 @@
 .contact {
+  position: relative;
   color: white;
   background-color: #586368;
-  padding: 50px 0px;
 
-  .form-side {
-    
+  .contact-main-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+
+    // .korea-photo {
+    //   position: relative;
+    //   background-image: url("../images/teapot.jpg");
+    //   background-size:     cover;                      /* <------ */
+    //   background-repeat:   no-repeat;
+    //   background-position: center center;
+    //
+    //   mix-blend-mode: multiply;
+    //   filter: grayscale(100%) blur(0px);
+    //   z-index: 2;
+    // }
+
+    .img-form-container {
+      box-sizing: border-box;
+      background-color: #222;
+      color: white;
+      position: absolute;
+      font-size: 1.2em;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      z-index: 3;
+      color: white;
+      padding: 50px;
+
+      input, textarea {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+      }
+
+      button {
+        padding: 10px 36px;
+      }
+
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: white;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: white;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: white;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: white;
+      }
+    }
+  }
+
+  .form-container {
+    box-sizing: border-box;
+    background-color: #222;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    min-height: 470px;
+    font-family: $font-body-light;
+    font-size: 1.2em;
+
+    .city {
+      padding: 25px 0px;
+      i {
+        margin-right: 11px;
+      }
+    }
+
+    ul {
+
+      li {
+        padding: 3px 0px;
+
+        i {
+          margin-right: 8px;
+        }
+      }
+    }
   }
 
   h2 {
-    font-family: RalewayBold;
+    font-family: $font-header-bold;
     font-size: 2em;
   }
 
   label {
-    font-family: RalewayThin;
+    font-family: $font-body-thin;
   }
 
 }

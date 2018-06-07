@@ -1,35 +1,12 @@
-@font-face {
-  font-family: RalewayBold;
-  src: url("./../fonts/raleway/Raleway-Bold.ttf");
-}
-
-@font-face {
-  font-family: RalewayBoldItalic;
-  src: url("./../fonts/raleway/Raleway-BoldItalic.ttf");
-}
-
-@font-face {
-  font-family: RalewayLight;
-  src: url("./../fonts/raleway/Raleway-Light.ttf");
-}
-
-@font-face {
-  font-family: RalewayThin;
-  src: url("./../fonts/raleway/Raleway-Thin.ttf");
-}
-
-@font-face {
-  font-family: RalewayThinItalic;
-  src: url("./../fonts/raleway/Raleway-ThinItalic.ttf");
-}
+@import "variables.scss";
 
 .main-bg {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: #1F494D;
-  border-top: 6px solid #7F3632;
+  background-color: $color-secondary;
+  border-top: 6px solid $color-primary;
   z-index: 1;
 
   .face-shot {
@@ -51,38 +28,42 @@
 
   .main-header {
     margin-top: 100px;
-    font-family: RalewayBold;
+    font-family: $font-header-bold;
     font-size: 3.5em;
-    max-width: 40%;
+
+    /* Responsive: Portrait tablets and up */
+    @media screen and (min-width: 768px) {
+      max-width: 40%;
+    }
   }
 
   .main-secondary-header {
-    font-family: RalewayBold;
+    font-family: $font-header-bold;
     font-size: 1.5em;
   }
 
   .main-p-text {
     margin-top: 50px;
-    font-family: RalewayThin;
+    font-family: $font-body-thin;
     font-size: 1.5em;
 
     .thin-italic {
-      font-family: RalewayThinItalic;
+      font-family: $font-body-thin-italic;
     }
   }
 
   button {
-    background-color: #7F3632;
-    border-color: #641E1A;
+    background-color: $color-primary;
+    border-color: $color-primary-dk;
     font-size: 1.5em;
     padding: 10px 30px;
   }
 
   .light-text {
-    font-family: RalewayLight;
+    font-family: $font-body-light;
   }
 
   .bold-italic-text {
-    font-family: RalewayBoldItalic;
+    font-family: $font-header-bold-italic;
   }
 }

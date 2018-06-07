@@ -4,10 +4,10 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #efefef;
-  color: #586368;
+  color: $color-font-lt;
 
   .darker {
-    color: #34434B;
+    color: $color-font-dk;
   }
 
   .service-icon {
@@ -18,13 +18,13 @@
 
   h2 {
     color: #34434B;
-    font-size: 1.5em;
-    font-family: RalewayBold;
+    font-size: 1.8em;
+    font-family: $font-header-bold;
   }
 
   p {
-    font-size: 1.2em;
-    font-family: RalewayLight;
+    font-size: 1.5em;
+    font-family: $font-body-light;
   }
 
   .teaching-status {
