@@ -17,6 +17,12 @@ function windowH() {
       $('.korea-photo').css({height: contactHeight});
       $('.img-form-container').css({height: contactHeight});
     } else {
+      var mH = '700px';
+      $('.main-bg').css({height: mH});
+      $('.main').css({height: mH});
+      $('.face-shot').css({height: mH});
+
+      $('.contact-main-bg').css({height: mH});
       $('.form-container').css({width: '100%'});
     }
 }
