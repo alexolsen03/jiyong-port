@@ -76,7 +76,7 @@
             <div class="row">
               <div class="col-sm-4 col-lg-2">
                 <div class="service-icon">
-                  <i class="fa fa-3x fa-assistive-listening-systems"></i>
+                  <i class="fa fa-3x fa-comments-o"></i>
                 </div>
               </div>
               <div class="col-sm-8 col-lg-10">
@@ -131,38 +131,44 @@
     </div>
 
     <div class="contact">
-      <div class="form-container">
-        <h2>Contact</h2>
-
-        <div class="city">
-          <i class="fa fa-map-marker"></i>Omaha, NE
+      <div class="contact-main-bg">
+        <div class="container">
+        <div class="row">
+          <div class="col col-sm-6">
+            <div class="img-form-container">
+                <form id="msgForm">
+                  <h2>Send a Message</h2>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="msgName" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="msgEmail" placeholder="Email" aria-describedby="emailHelp" >
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" id="msgBody" rows="6" placeholder="Message"></textarea>
+                  </div>
+                  <button id="msgBtn" onclick="requestMsg()" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+          </div>
+          <div class="col col-sm-6">
+            <div class="img-form-container">
+                <form id="callForm">
+                  <h2>Request a Call</h2>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="callName" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="callPhone" placeholder="Phone">
+                  </div>
+                  <button id="callBtn" onclick="requestCall()" class="btn btn-primary">Request</button>
+                </form>
+            </div>
+          </div>
         </div>
-
-        <ul>
-          <li><i class="fa fa-phone"></i> 402-830-5353</li>
-          <li><i class="fa fa-envelope"></i> jleetranslations@gmail.com</li>
-        </ul>
-
+        </div>
       </div>
-      <!-- <div class="contact-main-bg hidden-xs">
-        <div class="korea-photo"></div>
-        <div class="img-form-container">
-            <form>
-              <h2>Send a Message</h2>
-              <div class="form-group">
-                <input type="text" class="form-control" id="name" placeholder="Name">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="Email" aria-describedby="emailHelp" >
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" id="description" rows="6" placeholder="Message"></textarea>
-              </div>
-              <button class="btn btn-primary">Send</button>
-            </form>
 
-        </div>
-      </div> -->
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

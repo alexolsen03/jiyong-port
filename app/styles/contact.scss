@@ -1,14 +1,9 @@
 .contact {
-  position: relative;
   color: white;
-  background-color: #586368;
+  width: 100%;
+  background-color: #222;
 
   .contact-main-bg {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 1;
 
     // .korea-photo {
     //   position: relative;
@@ -26,12 +21,8 @@
       box-sizing: border-box;
       background-color: #222;
       color: white;
-      position: absolute;
       font-size: 1.2em;
-      top: 0px;
-      left: 0px;
       width: 100%;
-      z-index: 3;
       color: white;
       padding: 50px;
 
@@ -56,35 +47,6 @@
       }
       :-moz-placeholder { /* Firefox 18- */
         color: white;
-      }
-    }
-  }
-
-  .form-container {
-    box-sizing: border-box;
-    background-color: #222;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    min-height: 470px;
-    font-family: $font-body-light;
-    font-size: 1.2em;
-
-    .city {
-      padding: 25px 0px;
-      i {
-        margin-right: 11px;
-      }
-    }
-
-    ul {
-
-      li {
-        padding: 3px 0px;
-
-        i {
-          margin-right: 8px;
-        }
       }
     }
   }
